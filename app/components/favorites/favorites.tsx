@@ -8,7 +8,7 @@ function Favorites() {
       <div className="grid  grid-cols-2 gap-4 bg-blue-700 bg-opacity-50 text-center rounded-lg w-full h-14 align-center items-center">
         {favoriteWebsites.map((website, index) => (
           <div key={index}>
-            <a href={website.url}>
+            <a href={website.url} target="_blank">
               <h1 className="text-2xl text-white">{website.name}</h1>
             </a>
           </div>
