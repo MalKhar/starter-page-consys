@@ -16,4 +16,8 @@ export const favoriteWebsites = [
     name: "Sintegra",
     url: "http://www.sintegra.gov.br/",
   },
+  {
+    name: "ftp",
+    url: "ftp://consysonline.com.br",
+  },
 ];
