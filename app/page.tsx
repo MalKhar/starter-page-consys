@@ -1,11 +1,16 @@
 "use client";
+// import uniao from "@/app/components/uniao/actions"
+import { formatUniao } from "@/app/components/uniao/actions";
 import Background from "./components/background/background";
 import Timer from "./components/timer/timer";
 import Input from "./components/input/input";
 import Favorites from "./components/favorites/favorites";
 import InputBase from "./components/input-base/input-base";
 import Image from "next/image";
+
 export default function Home() {
+  const data = formatUniao();
+
   return (
     <>
       <div className="grid grid-rows-[20px_1fr_20px] justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20]">
@@ -33,4 +38,10 @@ export default function Home() {
       </div>
     </>
   );
+}
+function useQuery(arg0: {
+  queryKey: (() => Promise<string[][]>)[];
+  queryFn: () => Promise<string[][]>;
+}): { data: any; error: any } {
+  throw new Error("Function not implemented.");
 }
