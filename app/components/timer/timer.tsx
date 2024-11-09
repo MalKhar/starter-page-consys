@@ -16,7 +16,7 @@ export default function Timer() {
 
   return (
     <div className="text-center">
-      <p className="text-8xl drop-shadow-lg text-blue-800">
+      <p className="text-7xl drop-shadow-lg text-blue-800">
         {time.toLocaleTimeString().toString()}
       </p>
     </div>
